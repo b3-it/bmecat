@@ -12,19 +12,34 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3|^8.0",
         "ext-dom": "*",
         "ext-libxml": "*",
         "jms/serializer": "^3.4",
         "symfony/expression-language": "^5.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.0"
     },
     "autoload": {
         "psr-4": {
             "Naugrim\\BMEcat\\Tests\\": "tests/",
             "Naugrim\\BMEcat\\": "src/"
         }
+    },
+    "scripts": {
+        "phpcs": "test -f ./tools/phpcompatibility/vendor/bin/phpcs || composer --working-dir=tools/phpcompatibility install && php -dmemory_limit=2G ./tools/phpcompatibility/vendor/bin/phpcs --runtime-set testVersion 7.4- --standard=./tools/phpcompatibility/vendor/phpcompatibility/php-compatibility/PHPCompatibility --ignore=\"vendor/*,node_modules/*,tools/*,css/*,js/*,public/*,resources/views/*\"",
+        "fix-dry": [
+            "test -f ./tools/php-cs-fixer/vendor/bin/php-cs-fixer || composer --working-dir=tools/php-cs-fixer install && ./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --dry-run -- "
+        ],
+        "fix": [
+            "test -f ./tools/php-cs-fixer/vendor/bin/php-cs-fixer || composer --working-dir=tools/php-cs-fixer install && ./tools/php-cs-fixer/vendor/bin/php-cs-fixer fix -- "
+        ],
+        "rector": [
+            "test -f ./tools/rector/vendor/bin/rector || composer --working-dir=tools/rector install && ./tools/rector/vendor/bin/rector --autoload-file=vendor/autoload.php "
+        ],
+        "phpunit": [
+            "@php -dxdebug.mode=coverage vendor/bin/phpunit"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
     }
 }
