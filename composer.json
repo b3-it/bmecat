@@ -37,6 +37,9 @@
         ],
         "rector": [
             "test -f ./tools/rector/vendor/bin/rector || composer --working-dir=tools/rector install && ./tools/rector/vendor/bin/rector --autoload-file=vendor/autoload.php "
+        ],
+        "phpunit": [
+            "@php -dxdebug.mode=coverage vendor/bin/phpunit"
         ]
     }
 }
