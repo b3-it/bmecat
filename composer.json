@@ -12,14 +12,11 @@
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.3",
         "ext-dom": "*",
         "ext-libxml": "*",
         "jms/serializer": "^3.4",
         "symfony/expression-language": "^5.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.0"
     },
     "autoload": {
         "psr-4": {
@@ -41,5 +38,8 @@
         "phpunit": [
             "@php -dxdebug.mode=coverage vendor/bin/phpunit"
         ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
     }
 }
