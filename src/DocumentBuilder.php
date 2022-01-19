@@ -10,10 +10,13 @@ use JMS\Serializer\SerializationContext;
 use Naugrim\BMEcat\Nodes\Contracts\NodeInterface;
 use Naugrim\BMEcat\Nodes\Document;
 use Naugrim\BMEcat\Exception\MissingDocumentException;
+use Naugrim\BMEcat\Serializer\Concerns\BuildSerializerWithExpressionLanguage;
 use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 
 class DocumentBuilder
 {
+    use BuildSerializerWithExpressionLanguage;
+
     /**
      *
      * @var Serializer
@@ -40,9 +43,7 @@ class DocumentBuilder
     public function __construct(Serializer $serializer = null, $context = null)
     {
         if ($serializer === null) {
-            $serializer = SerializerBuilder::create()
-                ->setExpressionEvaluator(new ExpressionEvaluator($this->getExpressionLanguage()))
-                ->build();
+            $serializer = $this->buildSerializerWithExpressionLanguage(SerializerBuilder::create());
         }
 
         if ($context === null) {
@@ -51,21 +52,6 @@ class DocumentBuilder
 
         $this->context    = $context;
         $this->serializer = $serializer;
-    }
-
-    /**
-     * @return ExpressionLanguage
-     */
-    private function getExpressionLanguage() : ExpressionLanguage
-    {
-        $expressionLanguage = new ExpressionLanguage();
-        $expressionLanguage->register('empty', function ($str) {
-            return $str;
-        }, function ($arguments, $str) {
-            return empty($str);
-        });
-
-        return $expressionLanguage;
     }
 
     /**
