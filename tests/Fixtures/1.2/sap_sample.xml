@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BMECAT SYSTEM "bmecat_new_catalog_1_2.dtd">
+<BMECAT version="1.2">
+    <HEADER>
+        <GENERATOR_INFO>PSX Toolset v. 1.5</GENERATOR_INFO>
+        <CATALOG>
+            <LANGUAGE>eng</LANGUAGE>
+            <CATALOG_ID>SAMPLECAT_1</CATALOG_ID>
+            <CATALOG_VERSION>001.001</CATALOG_VERSION>
+            <CATALOG_NAME>Sample Catalog</CATALOG_NAME>
+            <DATETIME type="generation_date">
+                <DATE>2015-11-13</DATE>
+                <TIME>09:41:25</TIME>
+            </DATETIME>
+            <TERRITORY>US</TERRITORY>
+            <CURRENCY>USD</CURRENCY>
+            <MIME_ROOT>.</MIME_ROOT>
+        </CATALOG>
+        <BUYER>
+            <BUYER_ID type="buyer_specific">408000074</BUYER_ID>
+            <BUYER_NAME>Buyer ABC</BUYER_NAME>
+        </BUYER>
+        <AGREEMENT>
+            <AGREEMENT_ID>FLN 12/03</AGREEMENT_ID>
+            <DATETIME type="agreement_start_date">
+                <DATE>2015-12-01</DATE>
+            </DATETIME>
+            <DATETIME type="agreement_end_date">
+                <DATE>2018-12-31</DATE>
+            </DATETIME>
+        </AGREEMENT>
+        <SUPPLIER>
+            <SUPPLIER_ID type="buyer_specific">sid499</SUPPLIER_ID>
+            <SUPPLIER_ID type="supplier_specific">Test Company</SUPPLIER_ID>
+            <SUPPLIER_NAME>Test Supplier</SUPPLIER_NAME>
+        </SUPPLIER>
+    </HEADER>
+    <T_NEW_CATALOG>
+
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>A1-00</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Smartphone</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Smartphone: Expandable up to 64 GB. Brilliant 6" screen.</DESCRIPTION_LONG>
+                <BUYER_AID type="BUYER" />
+                <DELIVERY_TIME>21</DELIVERY_TIME>
+                <KEYWORD>Mobile</KEYWORD>
+                <KEYWORD>SMARTPHONE</KEYWORD>
+
+                <ARTICLE_STATUS type="core_article">true</ARTICLE_STATUS>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>UNSPSC</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>44111501</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <QUANTITY_MIN>10</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>5</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2015-12-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2015-12-25</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>149</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                    <LOWER_BOUND>10</LOWER_BOUND>
+                </ARTICLE_PRICE>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>140</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                    <LOWER_BOUND>20</LOWER_BOUND>
+                </ARTICLE_PRICE>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>135</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                    <LOWER_BOUND>30</LOWER_BOUND>
+                </ARTICLE_PRICE>
+
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/main.jpeg</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone main image</MIME_DESCR>
+                    <MIME_ALT>Smartphone main image</MIME_ALT>
+                    <MIME_PURPOSE>detail</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/moto_aux1.jpeg</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone side left image</MIME_DESCR>
+                    <MIME_ALT>Smartphone side left image</MIME_ALT>
+                    <MIME_PURPOSE>detail</MIME_PURPOSE>
+                    <MIME_ORDER>2</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/moto_aux2.jpeg</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone side right image</MIME_DESCR>
+                    <MIME_ALT>Smartphone side right image</MIME_ALT>
+                    <MIME_PURPOSE>detail</MIME_PURPOSE>
+                    <MIME_ORDER>3</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/moto_aux3.jpeg</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone backside image</MIME_DESCR>
+                    <MIME_ALT>Smartphone backside image</MIME_ALT>
+                    <MIME_PURPOSE>detail</MIME_PURPOSE>
+                    <MIME_ORDER>4</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>application/pdf</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/smartphone_guidebook.pdf</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone User Manual</MIME_DESCR>
+                    <MIME_ALT>Smartphone User Manual</MIME_ALT>
+                    <MIME_PURPOSE>data_sheet</MIME_PURPOSE>
+                    <MIME_ORDER>5</MIME_ORDER>
+                </MIME>
+                <MIME>
+                    <MIME_TYPE>url</MIME_TYPE>
+                    <MIME_SOURCE>http://12.34.56.789:8888/myapp/smartphone_specs.html</MIME_SOURCE>
+                    <MIME_DESCR>Smartphone Product Specifications</MIME_DESCR>
+                    <MIME_ALT>Smartphone Product Specifications</MIME_ALT>
+                    <MIME_PURPOSE>data_sheet</MIME_PURPOSE>
+                    <MIME_ORDER>6</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+            <ARTICLE_REFERENCE type="accessories">
+                <ART_ID_TO>A1-03</ART_ID_TO>
+            </ARTICLE_REFERENCE>
+
+            <ARTICLE_REFERENCE type="mandatory">
+                <ART_ID_TO>A1-01</ART_ID_TO>
+
+            </ARTICLE_REFERENCE>
+            <ARTICLE_REFERENCE type="mandatory">
+                <ART_ID_TO>A1-0</ART_ID_TO>
+            </ARTICLE_REFERENCE>
+
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>A1-01</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Wireless Charger for Smartphones/Tablets</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Wireless Charger for Smartphones/Tablets</DESCRIPTION_LONG>
+                <DELIVERY_TIME>14</DELIVERY_TIME>
+                <KEYWORD>Charger</KEYWORD>
+
+                <KEYWORD>Wireless</KEYWORD>
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>UNSPSC</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>44111501</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <QUANTITY_MIN>10</QUANTITY_MIN>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2015-12-01</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>49.90</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+
+        </ARTICLE>
+
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>A1-02</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Micro USB Data Cable</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Micro USB Data Cable</DESCRIPTION_LONG>
+                <DELIVERY_TIME>14</DELIVERY_TIME>
+                <KEYWORD>USB</KEYWORD>
+                <KEYWORD>Cable</KEYWORD>
+
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>UNSPSC</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>44111501</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <QUANTITY_MIN>10</QUANTITY_MIN>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2015-12-01</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>5</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+        </ARTICLE>
+
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>A1-03</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Smartphone Case, Gold Slim-Fit</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Smartphone Case, Gold Slim-Fit Smart Case Cover for Smartphone</DESCRIPTION_LONG>
+                <DELIVERY_TIME>14</DELIVERY_TIME>
+                <KEYWORD>Case</KEYWORD>
+                <KEYWORD>Cover</KEYWORD>
+
+            </ARTICLE_DETAILS>
+            <ARTICLE_FEATURES>
+                <REFERENCE_FEATURE_SYSTEM_NAME>UNSPSC</REFERENCE_FEATURE_SYSTEM_NAME>
+                <REFERENCE_FEATURE_GROUP_ID>44111501</REFERENCE_FEATURE_GROUP_ID>
+            </ARTICLE_FEATURES>
+            <ARTICLE_ORDER_DETAILS>
+                <ORDER_UNIT>C62</ORDER_UNIT>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>2015-12-01</DATE>
+                </DATETIME>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>10</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>USD</PRICE_CURRENCY>
+                    <TAX>0.19</TAX>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+        </ARTICLE>
+
+
+    </T_NEW_CATALOG>
+</BMECAT>
