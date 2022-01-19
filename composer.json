@@ -9,10 +9,14 @@
         {
             "name": "Erik Anders",
             "email": "erik.gto@googlemail.com"
+        },
+        {
+            "name": "Benjamin Josefus",
+            "email": "benjamin@josefus.net"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "ext-dom": "*",
         "ext-libxml": "*",
         "jms/serializer": "^3.4",
