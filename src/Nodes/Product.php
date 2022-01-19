@@ -28,7 +28,7 @@ class Product implements Contracts\NodeInterface
      *
      * @var string
      */
-    protected $mode = 'new';
+    protected string $mode = 'new';
 
     /**
      *
@@ -36,9 +36,9 @@ class Product implements Contracts\NodeInterface
      * @Serializer\Type("Naugrim\BMEcat\Nodes\SupplierPid")
      * @Serializer\SerializedName("SUPPLIER_PID")
      *
-     * @var SupplierPid
+     * @var SupplierPid|null
      */
-    protected $id;
+    protected ?SupplierPid $id = null;
 
     /**
      *
@@ -46,9 +46,9 @@ class Product implements Contracts\NodeInterface
      * @Serializer\SerializedName("PRODUCT_DETAILS")
      * @Serializer\Type("Naugrim\BMEcat\Nodes\Product\Details")
      *
-     * @var Details
+     * @var Details|null
      */
-    protected $details;
+    protected ?Details $details = null;
 
 
     /**
@@ -59,16 +59,16 @@ class Product implements Contracts\NodeInterface
      *
      * @var Features[]
      */
-    protected $features = [];
+    protected ?array $features = null;
 
     /**
      * @Serializer\Expose
      * @Serializer\SerializedName("PRODUCT_ORDER_DETAILS")
      * @Serializer\Type("Naugrim\BMEcat\Nodes\Product\OrderDetails")
      *
-     * @var OrderDetails
+     * @var OrderDetails|null
      */
-    protected $orderDetails;
+    protected ?OrderDetails $orderDetails = null;
 
     /**
      *
@@ -124,9 +124,9 @@ class Product implements Contracts\NodeInterface
      *
      * @return Details
      */
-    public function getDetails()
+    public function getDetails(): ?Details
     {
-        return $this->details;
+        return $this->details ?? null;
     }
 
     /**
@@ -235,9 +235,9 @@ class Product implements Contracts\NodeInterface
     /**
      * @return OrderDetails|null
      */
-    public function getOrderDetails()
+    public function getOrderDetails(): ?OrderDetails
     {
-        return $this->orderDetails;
+        return $this->orderDetails ?? null;
     }
 
     /**

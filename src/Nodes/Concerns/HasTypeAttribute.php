@@ -12,16 +12,16 @@ trait HasTypeAttribute
      * @Serializer\SerializedName("type")
      * @Serializer\XmlAttribute
      *
-     * @var string
+     * @var string|null
      */
-    protected $type;
+    protected ?string $type = null;
 
     /**
      * @return string
      */
     public function getType(): string
     {
-        return $this->type;
+        return $this->type ?? '';
     }
 
     /**
