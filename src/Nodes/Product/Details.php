@@ -23,27 +23,28 @@ class Details implements Contracts\NodeInterface
      *
      * @var string
      */
-    protected $descriptionShort = '';
+    protected string $descriptionShort = '';
 
     /**
      *
      * @Serializer\Expose
      * @Serializer\Type("string")
      * @Serializer\SerializedName("DESCRIPTION_LONG")
-     *
-     * @var string
+     * @Serializer\Exclude(if="empty(object)")
+     * @var string|null
      */
-    protected $descriptionLong;
+    protected ?string $descriptionLong = null;
 
     /**
      *
      * @Serializer\Expose
      * @Serializer\Type("string")
      * @Serializer\SerializedName("EAN")
+     * @Serializer\Exclude(if="empty(object)")
      *
-     * @var string
+     * @var string|null
      */
-    protected $ean;
+    protected ?string $ean = null;
 
     /**
      *
@@ -51,9 +52,9 @@ class Details implements Contracts\NodeInterface
      * @Serializer\Type("string")
      * @Serializer\SerializedName("SUPPLIER_ALT_PID")
      *
-     * @var string
+     * @var string|null
      */
-    protected $supplierAltPid;
+    protected ?string $supplierAltPid = null;
 
     /**
      *
@@ -61,18 +62,18 @@ class Details implements Contracts\NodeInterface
      * @Serializer\Type("array<Naugrim\BMEcat\Nodes\BuyerPidNode>")
      * @Serializer\XmlList(inline=true, entry="BUYER_PID")
      *
-     * @var BuyerPid[]
+     * @var BuyerPid[]|null
      */
-    protected $buyerPids;
+    protected ?array $buyerPids = null;
 
     /**
      * @Serializer\Expose
      * @Serializer\Type("string")
      * @Serializer\SerializedName("MANUFACTURER_PID")
      *
-     * @var string
+     * @var string|null
      */
-    protected $manufacturerPid;
+    protected ?string $manufacturerPid = null;
 
     /**
      *
@@ -80,9 +81,9 @@ class Details implements Contracts\NodeInterface
      * @Serializer\Type("string")
      * @Serializer\SerializedName("MANUFACTURER_NAME")
      *
-     * @var string
+     * @var string|null
      */
-    protected $manufacturerName;
+    protected ?string $manufacturerName = null;
 
     /**
      *
@@ -90,9 +91,9 @@ class Details implements Contracts\NodeInterface
      * @Serializer\Type("string")
      * @Serializer\SerializedName("MANUFACTURER_TYPE_DESCR")
      *
-     * @var string
+     * @var string|null
      */
-    protected $manufacturerTypeDescription;
+    protected ?string $manufacturerTypeDescription = null;
 
     /**
      *
@@ -184,7 +185,7 @@ class Details implements Contracts\NodeInterface
      *
      * @var Status[]
      */
-    protected $productStatus;
+    protected array $productStatus = [];
 
     /**
      * @param BuyerPid $buyerAid
@@ -246,9 +247,7 @@ class Details implements Contracts\NodeInterface
      */
     public function nullBuyerPids() : Details
     {
-        if (empty($this->buyerPids) === true) {
-            $this->buyerPids = null;
-        }
+        $this->buyerPids = [];
 
         return $this;
     }
@@ -289,9 +288,7 @@ class Details implements Contracts\NodeInterface
      */
     public function nullProductStatus() : Details
     {
-        if (empty($this->productStatus) === true) {
-            $this->productStatus = null;
-        }
+        $this->productStatus = [];
         return $this;
     }
 

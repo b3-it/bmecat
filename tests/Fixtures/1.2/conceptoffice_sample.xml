@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?><!DOCTYPE BMECAT SYSTEM
+        "bmecat_new_catalog_1_2.dtd">
+<BMECAT version="1.2" xmlns="http://www.bmecat.org/bmecat/1.2/bmecat_new_catalog">
+    <HEADER>
+        <GENERATOR_INFO>Software-Concept Office 7.0</GENERATOR_INFO>
+        <CATALOG>
+            <LANGUAGE>deu</LANGUAGE>
+            <CATALOG_ID>12120</CATALOG_ID>
+            <CATALOG_VERSION>1</CATALOG_VERSION>
+            <CATALOG_NAME>Artikelliste für BMECAT</CATALOG_NAME>
+            <DATETIME type="generation_date">
+                <DATE>2021-12-22</DATE>
+                <TIME>13:18:08</TIME>
+            </DATETIME>
+            <TERRITORY>AT</TERRITORY>
+            <CURRENCY>EUR</CURRENCY>
+            <MIME_ROOT>./</MIME_ROOT>
+            <USER_DEFINED_EXTENSIONS>
+                <UDX.SWC.IS_OFFER>1</UDX.SWC.IS_OFFER>
+            </USER_DEFINED_EXTENSIONS>
+        </CATALOG>
+        <BUYER>
+            <BUYER_ID type="iln">1</BUYER_ID>
+            <BUYER_NAME>Public</BUYER_NAME>
+            <ACCOUNTING_INFO>
+                <COST_CATEGORY_ID type="cost_center"/>
+            </ACCOUNTING_INFO>
+        </BUYER>
+        <SUPPLIER>
+            <SUPPLIER_ID type="iln">1</SUPPLIER_ID>
+            <SUPPLIER_NAME>Concept Office Web</SUPPLIER_NAME>
+            <ADDRESS type="supplier">
+                <NAME>Some Company</NAME>
+                <STREET>Some Street 123</STREET>
+                <ZIP>1234</ZIP>
+                <CITY>Somewhere</CITY>
+            </ADDRESS>
+            <USER_DEFINED_EXTENSIONS>UDX.SWC.CLIENT1UDX.SWC.BRANCH(all)</USER_DEFINED_EXTENSIONS>
+        </SUPPLIER>
+    </HEADER>
+    <T_NEW_CATALOG>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>HEXGTIN</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>box classic</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>box classic
+                    Breite (mm): 1200
+                    Tiefe (mm): 440
+                    Höhe (mm): 1150
+                    Dicke Boden/Plafond (mm): 19
+                    Sockelhöhe (mm): 25
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>GTIN_12345</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>ABC</MANUFACTURER_NAME>
+                <MANUFACTURER_TYPE_DESCR>XGTIN</MANUFACTURER_TYPE_DESCR>
+                <DELIVERY_TIME>0</DELIVERY_TIME>
+                <ACCOUNTING_INFO>
+                    <COST_CATEGORY_ID type="cost_center"/>
+                </ACCOUNTING_INFO>
+                <ARTICLE_STATUS type="core_article">Y</ARTICLE_STATUS>
+            </ARTICLE_DETAILS>
+            <ARTICLE_ORDER_DETAILS>
+                <QUANTITY>5</QUANTITY>
+                <ORDER_UNIT>Stück</ORDER_UNIT>
+                <CONTENT_UNIT>Stück</CONTENT_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>0001-01-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2022-01-12</DATE>
+                </DATETIME>
+                <DAILY_PRICE>false</DAILY_PRICE>
+                <ARTICLE_PRICE price_type="net_list">
+                    <PRICE_AMOUNT>332.50</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.20</TAX>
+                    <LOWER_BOUND>1</LOWER_BOUND>
+                </ARTICLE_PRICE>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>222.77</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.20</TAX>
+                    <LOWER_BOUND>1</LOWER_BOUND>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>12120-961.jpg</MIME_SOURCE>
+                    <MIME_DESCR>12120-961.jpg</MIME_DESCR>
+                    <MIME_ALT>12120-961.jpg</MIME_ALT>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+            <USER_DEFINED_EXTENSIONS>
+                <GRUNDARTIKELNUMMER>XSU_S_GTIN_131122334</GRUNDARTIKELNUMMER>
+                <VARIANTENTEXT>Breite (mm): 1200
+                    Tiefe (mm): 440
+                    Höhe (mm): 1150
+                    Dicke Boden/Plafond (mm): 19
+                    Sockelhöhe (mm): 25
+                </VARIANTENTEXT>
+                <ARTIKELVARIANTENNUMMER>
+                    XSU_S_GTIN_131.SCHRANKTYP=BOX;XSU_S_GTIN_131.ORDNERHOEHE_BOX=3_OH;XSU_S_GTIN_131.BODEN_PLAF=19_19;XSU_S_GTIN_131.KORP_BELAG=MEL;XSU_S_GTIN_131.KORP_FARBE=BAWH;XSU_S_GTIN_131.PLAF_BELAG=MEL;XSU_S_GTIN_131.PLAF_FARBE=BAWH;XSU_S_GTIN_131.AUSF_KANTE=STANDARD;XSU_S_GTIN_131.TUERTYP=STANDARD;XSU_S_GTIN_131.TUER_BELAG=MEL;XSU_S_GTIN_131.TUER_FARBE=BAWH;XSU_S_GTIN_131.RUECKWAND=STANDARD;XSU_S_GTIN_131.GRIFF=TYP_22;XSU_S_GTIN_131.GRIFF_BELAG=MET;XSU_S_GTIN_131.GRIFF_FARBE=SWGL;XSU_S_GTIN_131.SPERRE=OHNE_SCHLOSS;XSU_S_GTIN_131.SOCKELTYP=FUSS_25;XSU_S_GTIN_131.SOCKELBL_ANOR=OHNE_BLENDE;XSU_S_GTIN_131.RASTERBOHRUNG=UNTERB;XSU_S_GTIN_131.EINBAU=OHNE_EINBAU;XSU_S_GTIN_131.MONTAGEART=ZUSAMMENGEBAUT;XSU_S_GTIN_131.SONDER=OHNE_SONDER;KATALOG.KATALOG=STANDARD
+                </ARTIKELVARIANTENNUMMER>
+                <UDX.TRADEPILOT.CATALOGFLAG>0</UDX.TRADEPILOT.CATALOGFLAG>
+            </USER_DEFINED_EXTENSIONS>
+            <USER_DEFINED_EXTENSIONS>
+                <GRUNDARTIKELNUMMER>XSU_S_GTIN_131</GRUNDARTIKELNUMMER>
+                <VARIANTENTEXT>Breite (mm): 1200
+                    Tiefe (mm): 440
+                </VARIANTENTEXT>
+                <ARTIKELVARIANTENNUMMER>
+                    XSU_S_GTIN_131.SCHRANKTYP=BOX;XSU_S_GTIN_131.ORDNERHOEHE_BOX=3_OH;XSU_S_GTIN_131.BODEN_PLAF=19_19;XSU_S_GTIN_131.KORP_BELAG=MEL;XSU_S_GTIN_131.KORP_FARBE=BAWH;XSU_S_GTIN_131.PLAF_BELAG=MEL;XSU_S_GTIN_131.PLAF_FARBE=BAWH;XSU_S_GTIN_131.AUSF_KANTE=STANDARD;XSU_S_GTIN_131.TUERTYP=STANDARD;XSU_S_GTIN_131.TUER_BELAG=MEL;XSU_S_GTIN_131.TUER_FARBE=BAWH;XSU_S_GTIN_131.RUECKWAND=STANDARD;XSU_S_GTIN_131.GRIFF=TYP_22;XSU_S_GTIN_131.GRIFF_BELAG=MET;XSU_S_GTIN_131.GRIFF_FARBE=SWGL;XSU_S_GTIN_131.SPERRE=OHNE_SCHLOSS;XSU_S_GTIN_131.SOCKELTYP=FUSS_25;XSU_S_GTIN_131.SOCKELBL_ANOR=OHNE_BLENDE;XSU_S_GTIN_131.RASTERBOHRUNG=UNTERB;XSU_S_GTIN_131.EINBAU=OHNE_EINBAU;XSU_S_GTIN_131.MONTAGEART=ZUSAMMENGEBAUT;XSU_S_GTIN_131.SONDER=OHNE_SONDER;KATALOG.KATALOG=STANDARD
+                </ARTIKELVARIANTENNUMMER>
+                <UDX.TRADEPILOT.CATALOGFLAG>0</UDX.TRADEPILOT.CATALOGFLAG>
+            </USER_DEFINED_EXTENSIONS>
+        </ARTICLE>
+        <ARTICLE mode="new">
+            <SUPPLIER_AID>HEEFGTIN</SUPPLIER_AID>
+            <ARTICLE_DETAILS>
+                <DESCRIPTION_SHORT>Bully</DESCRIPTION_SHORT>
+                <DESCRIPTION_LONG>Bully
+                    Breite (mm): 400
+                    Tiefe (mm): 400
+                    Höhe (mm): 495
+                    Rolle Oberfläche: Weiß
+                </DESCRIPTION_LONG>
+                <MANUFACTURER_AID>BULLY_GTIN_001</MANUFACTURER_AID>
+                <MANUFACTURER_NAME>HE</MANUFACTURER_NAME>
+                <MANUFACTURER_TYPE_DESCR>EFGTIN</MANUFACTURER_TYPE_DESCR>
+                <DELIVERY_TIME>0</DELIVERY_TIME>
+                <ACCOUNTING_INFO>
+                    <COST_CATEGORY_ID type="cost_center"/>
+                </ACCOUNTING_INFO>
+                <ARTICLE_STATUS type="core_article">Y</ARTICLE_STATUS>
+            </ARTICLE_DETAILS>
+            <ARTICLE_ORDER_DETAILS>
+                <QUANTITY>10</QUANTITY>
+                <ORDER_UNIT>Stück</ORDER_UNIT>
+                <CONTENT_UNIT>Stück</CONTENT_UNIT>
+                <PRICE_QUANTITY>1</PRICE_QUANTITY>
+                <QUANTITY_MIN>1</QUANTITY_MIN>
+                <QUANTITY_INTERVAL>1</QUANTITY_INTERVAL>
+            </ARTICLE_ORDER_DETAILS>
+            <ARTICLE_PRICE_DETAILS>
+                <DATETIME type="valid_start_date">
+                    <DATE>0001-01-01</DATE>
+                </DATETIME>
+                <DATETIME type="valid_end_date">
+                    <DATE>2022-01-12</DATE>
+                </DATETIME>
+                <DAILY_PRICE>false</DAILY_PRICE>
+                <ARTICLE_PRICE price_type="net_list">
+                    <PRICE_AMOUNT>113.50</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.20</TAX>
+                    <LOWER_BOUND>1</LOWER_BOUND>
+                </ARTICLE_PRICE>
+                <ARTICLE_PRICE price_type="net_customer">
+                    <PRICE_AMOUNT>113.50</PRICE_AMOUNT>
+                    <PRICE_CURRENCY>EUR</PRICE_CURRENCY>
+                    <TAX>0.20</TAX>
+                    <LOWER_BOUND>1</LOWER_BOUND>
+                </ARTICLE_PRICE>
+            </ARTICLE_PRICE_DETAILS>
+            <MIME_INFO>
+                <MIME>
+                    <MIME_TYPE>image/jpeg</MIME_TYPE>
+                    <MIME_SOURCE>12120-952.jpg</MIME_SOURCE>
+                    <MIME_DESCR>12120-952.jpg</MIME_DESCR>
+                    <MIME_ALT>12120-952.jpg</MIME_ALT>
+                    <MIME_PURPOSE>normal</MIME_PURPOSE>
+                    <MIME_ORDER>1</MIME_ORDER>
+                </MIME>
+            </MIME_INFO>
+            <USER_DEFINED_EXTENSIONS>
+                <GRUNDARTIKELNUMMER>BULLY_GTIN_001</GRUNDARTIKELNUMMER>
+                <VARIANTENTEXT></VARIANTENTEXT>
+                <ARTIKELVARIANTENNUMMER>BULLY_GTIN_001.VERTRIEBSWEG=HALI_ONLINE;KATALOG.KATALOG=STANDARD
+                </ARTIKELVARIANTENNUMMER>
+                <UDX.TRADEPILOT.CATALOGFLAG>0</UDX.TRADEPILOT.CATALOGFLAG>
+            </USER_DEFINED_EXTENSIONS>
+            <USER_DEFINED_EXTENSIONS>
+                <GRUNDARTIKELNUMMER>BULLY_GTIN_001</GRUNDARTIKELNUMMER>
+                <VARIANTENTEXT></VARIANTENTEXT>
+                <ARTIKELVARIANTENNUMMER>BULLY_GTIN_001.VERTRIEBSWEG=HALI_ONLINE;KATALOG.KATALOG=STANDARD
+                </ARTIKELVARIANTENNUMMER>
+                <UDX.TRADEPILOT.CATALOGFLAG>0</UDX.TRADEPILOT.CATALOGFLAG>
+            </USER_DEFINED_EXTENSIONS>
+        </ARTICLE>
+    </T_NEW_CATALOG>
+</BMECAT>

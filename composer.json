@@ -1,18 +1,22 @@
 {
-    "name": "naugrim/bmecat",
+    "name": "bennsen/bmecat",
     "type": "library",
-    "description": "Allows to build BMEcat documents from PHP and converts them to xml",
+    "description": "Allows to build BMEcat documents from PHP and converts them to xml. Forked from naugrimm/bmecat.",
     "keywords": ["bmecat", "document", "serialization", "xml"],
-    "homepage": "https://github.com/naugrimm/bmecat",
+    "homepage": "https://github.com/bennsen/bmecat",
     "license": "MIT",
     "authors": [
         {
             "name": "Erik Anders",
             "email": "erik.gto@googlemail.com"
+        },
+        {
+            "name": "Benjamin Josefus",
+            "email": "benjamin@josefus.net"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.4|^8.0",
         "ext-dom": "*",
         "ext-libxml": "*",
         "jms/serializer": "^3.4",

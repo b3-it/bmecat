@@ -17,14 +17,14 @@ class Document implements Contracts\NodeInterface
      * @Serializer\Expose
      * @Serializer\XmlAttribute
      */
-    protected $version = '2005.1';
+    protected string $version = '2005.1';
 
     /**
      * @Serializer\Expose
      * @Serializer\SerializedName("xmlns")
      * @Serializer\XmlAttribute
      */
-    protected $namespace = 'http://www.bmecat.org/bmecat/2005.1';
+    protected string $namespace = 'http://www.bmecat.org/bmecat/2005.1';
 
     /**
      * @Serializer\Expose
@@ -40,7 +40,7 @@ class Document implements Contracts\NodeInterface
      * @Serializer\Type("Naugrim\BMEcat\Nodes\NewCatalog")
      * @Serializer\SerializedName("T_NEW_CATALOG")
      *
-     * @var NewCatalog
+     * @var NewCatalog|null
      */
     protected $catalog;
 
