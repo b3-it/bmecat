@@ -1,9 +1,9 @@
 {
-    "name": "naugrim/bmecat",
+    "name": "bennsen/bmecat",
     "type": "library",
     "description": "Allows to build BMEcat documents from PHP and converts them to xml",
     "keywords": ["bmecat", "document", "serialization", "xml"],
-    "homepage": "https://github.com/naugrimm/bmecat",
+    "homepage": "https://github.com/bennsen/bmecat",
     "license": "MIT",
     "authors": [
         {
